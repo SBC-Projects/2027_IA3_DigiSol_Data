@@ -1,0 +1,14 @@
+{
+  "name": "ia3-2027-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple training-workload API for the Digital Solutions IA3.",
+  "scripts": {
+    "build-data": "python scripts/build_dataset.py && python scripts/build_dirty.py",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

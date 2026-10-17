@@ -1,0 +1,25 @@
+problem_id,type,record_id,player_id,session_id,session_date,field,original_value,new_value,intended_detection
+A01,altered_measurement,REC_0001,PLAYER_01,SESSION_001,2027-02-01,distance_m,3604.04182,4604.04182,performance_hash and all_data_hash mismatch; average-speed inconsistency
+A02,altered_measurement,REC_0027,PLAYER_01,SESSION_002,2027-02-03,player_load,404.54262,605.12,performance_hash and all_data_hash mismatch
+A03,altered_measurement,REC_0104,PLAYER_26,SESSION_004,2027-02-08,max_speed_kmh,25.74956,42.51,performance_hash and all_data_hash mismatch
+A04,altered_measurement,REC_0156,PLAYER_26,SESSION_006,2027-02-11,duration_min,34.9,54.9,performance_hash and all_data_hash mismatch; average-speed inconsistency
+A05,altered_measurement,REC_0400,PLAYER_10,SESSION_016,2027-04-12,distance_m,3042.72174,2042.68,performance_hash and all_data_hash mismatch; average-speed inconsistency
+A06,altered_measurement,REC_0450,PLAYER_08,SESSION_018,2027-04-15,repeated_high_intensity_efforts,8,35,performance_hash and all_data_hash mismatch
+A07,altered_measurement,REC_0500,PLAYER_06,SESSION_020,2027-04-20,max_acceleration_ms2,3.68163,9.51,performance_hash and all_data_hash mismatch
+A08,altered_measurement,REC_0600,PLAYER_02,SESSION_024,2027-04-29,player_load_slow,88.41144,200.25,performance_hash and all_data_hash mismatch
+A09,altered_measurement,REC_0700,PLAYER_24,SESSION_027,2027-05-06,avg_speed_m_per_min,96.01378,110.25,performance_hash and all_data_hash mismatch; average-speed inconsistency
+A10,altered_measurement,REC_0740,PLAYER_12,SESSION_029,2027-05-11,accel_decel_over_2,96,180,performance_hash and all_data_hash mismatch
+D01,incorrect_device,REC_0002,PLAYER_02,SESSION_001,2027-02-01,device_id,GPS_02,GPS_17,identity_hash and all_data_hash mismatch; device does not match players.csv
+D02,incorrect_device,REC_0130,PLAYER_26,SESSION_005,2027-02-10,device_id,GPS_26,GPS_01,identity_hash and all_data_hash mismatch; device does not match players.csv
+D03,incorrect_device,REC_0550,PLAYER_04,SESSION_022,2027-04-26,device_id,GPS_04,GPS_22,identity_hash and all_data_hash mismatch; device does not match players.csv
+D04,incorrect_device,REC_0650,PLAYER_26,SESSION_025,2027-05-03,device_id,GPS_26,GPS_09,identity_hash and all_data_hash mismatch; device does not match players.csv
+L01,logical_inconsistency,REC_0003,PLAYER_03,SESSION_001,2027-02-01,distance_over_21_kmh_m,19.08,500.5,performance_hash mismatch; distance over 21 km/h exceeds distance over 15 km/h
+L02,logical_inconsistency,REC_0182,PLAYER_26,SESSION_007,2027-02-15,player_load_slow,185.44166,650.5,performance_hash mismatch; player_load_slow exceeds player_load
+L03,logical_inconsistency,REC_0234,PLAYER_26,SESSION_009,2027-02-18,accel_decel_over_2_5,31,90,performance_hash mismatch; accel_decel_over_2_5 exceeds accel_decel_over_2
+L04,logical_inconsistency,REC_0338,PLAYER_26,SESSION_013,2027-03-01,distance_over_25_kmh_m,24.49,200.5,performance_hash mismatch; distance over 25 km/h exceeds distance over 21 km/h
+M01,missing_measurement,REC_0005,PLAYER_05,SESSION_001,2027-02-01,player_load_slow,192.37259,,performance_hash mismatch; missing player_load_slow
+M02,missing_measurement,REC_0390,PLAYER_26,SESSION_015,2027-03-04,distance_m,1563.00967,,performance_hash mismatch; missing distance_m
+M03,missing_measurement,REC_0572,PLAYER_26,SESSION_022,2027-04-26,player_load,343.09035,,performance_hash mismatch; missing player_load
+R01,duplicate_record,REC_0004,PLAYER_04,SESSION_001,2027-02-01,entire record,unmodified,identical copy appended,player_id and session_id appear twice; record_id appears twice
+R02,duplicate_record,REC_0208,PLAYER_26,SESSION_008,2027-02-17,entire record,unmodified,identical copy appended,player_id and session_id appear twice; record_id appears twice
+R03,duplicate_record,REC_0780,PLAYER_26,SESSION_030,2027-05-13,entire record,unmodified,identical copy appended,player_id and session_id appear twice; record_id appears twice

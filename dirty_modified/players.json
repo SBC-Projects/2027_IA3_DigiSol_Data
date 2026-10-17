@@ -1,0 +1,236 @@
+[
+  {
+    "player_id": "PLAYER_01",
+    "given_name": "Jack",
+    "family_name": "Brennan",
+    "position_group": "Forward",
+    "playing_position": "Prop",
+    "jersey_number": 8,
+    "device_id": "GPS_01"
+  },
+  {
+    "player_id": "PLAYER_02",
+    "given_name": "Tom",
+    "family_name": "Walsh",
+    "position_group": "Forward",
+    "playing_position": "Hooker",
+    "jersey_number": 9,
+    "device_id": "GPS_02"
+  },
+  {
+    "player_id": "PLAYER_03",
+    "given_name": "Liam",
+    "family_name": "Harris",
+    "position_group": "Forward",
+    "playing_position": "Prop",
+    "jersey_number": 10,
+    "device_id": "GPS_03"
+  },
+  {
+    "player_id": "PLAYER_04",
+    "given_name": "Noah",
+    "family_name": "Campbell",
+    "position_group": "Forward",
+    "playing_position": "Second-row",
+    "jersey_number": 11,
+    "device_id": "GPS_04"
+  },
+  {
+    "player_id": "PLAYER_05",
+    "given_name": "Cooper",
+    "family_name": "Blake",
+    "position_group": "Forward",
+    "playing_position": "Second-row",
+    "jersey_number": 12,
+    "device_id": "GPS_05"
+  },
+  {
+    "player_id": "PLAYER_06",
+    "given_name": "Mason",
+    "family_name": "Reid",
+    "position_group": "Forward",
+    "playing_position": "Lock",
+    "jersey_number": 13,
+    "device_id": "GPS_06"
+  },
+  {
+    "player_id": "PLAYER_07",
+    "given_name": "Ethan",
+    "family_name": "Brooks",
+    "position_group": "Forward",
+    "playing_position": "Prop",
+    "jersey_number": 14,
+    "device_id": "GPS_07"
+  },
+  {
+    "player_id": "PLAYER_08",
+    "given_name": "Harry",
+    "family_name": "Nguyen",
+    "position_group": "Forward",
+    "playing_position": "Hooker",
+    "jersey_number": 15,
+    "device_id": "GPS_08"
+  },
+  {
+    "player_id": "PLAYER_09",
+    "given_name": "Joshua",
+    "family_name": "Kelly",
+    "position_group": "Forward",
+    "playing_position": "Prop",
+    "jersey_number": 16,
+    "device_id": "GPS_09"
+  },
+  {
+    "player_id": "PLAYER_10",
+    "given_name": "Patrick",
+    "family_name": "Murray",
+    "position_group": "Forward",
+    "playing_position": "Second-row",
+    "jersey_number": 17,
+    "device_id": "GPS_10"
+  },
+  {
+    "player_id": "PLAYER_11",
+    "given_name": "Sam",
+    "family_name": "Taylor",
+    "position_group": "Forward",
+    "playing_position": "Second-row",
+    "jersey_number": 18,
+    "device_id": "GPS_11"
+  },
+  {
+    "player_id": "PLAYER_12",
+    "given_name": "Daniel",
+    "family_name": "Fraser",
+    "position_group": "Forward",
+    "playing_position": "Lock",
+    "jersey_number": 19,
+    "device_id": "GPS_12"
+  },
+  {
+    "player_id": "PLAYER_13",
+    "given_name": "Ryan",
+    "family_name": "Mitchell",
+    "position_group": "Forward",
+    "playing_position": "Prop",
+    "jersey_number": 21,
+    "device_id": "GPS_13"
+  },
+  {
+    "player_id": "PLAYER_14",
+    "given_name": "Caleb",
+    "family_name": "White",
+    "position_group": "Forward",
+    "playing_position": "Second-row",
+    "jersey_number": 22,
+    "device_id": "GPS_14"
+  },
+  {
+    "player_id": "PLAYER_15",
+    "given_name": "Luke",
+    "family_name": "Edwards",
+    "position_group": "Forward",
+    "playing_position": "Lock",
+    "jersey_number": 24,
+    "device_id": "GPS_15"
+  },
+  {
+    "player_id": "PLAYER_16",
+    "given_name": "Oliver",
+    "family_name": "Grant",
+    "position_group": "Back",
+    "playing_position": "Fullback",
+    "jersey_number": 1,
+    "device_id": "GPS_16"
+  },
+  {
+    "player_id": "PLAYER_17",
+    "given_name": "Finn",
+    "family_name": "Doyle",
+    "position_group": "Back",
+    "playing_position": "Wing",
+    "jersey_number": 2,
+    "device_id": "GPS_17"
+  },
+  {
+    "player_id": "PLAYER_18",
+    "given_name": "Archie",
+    "family_name": "Bennett",
+    "position_group": "Back",
+    "playing_position": "Centre",
+    "jersey_number": 3,
+    "device_id": "GPS_18"
+  },
+  {
+    "player_id": "PLAYER_19",
+    "given_name": "Charlie",
+    "family_name": "Hughes",
+    "position_group": "Back",
+    "playing_position": "Centre",
+    "jersey_number": 4,
+    "device_id": "GPS_19"
+  },
+  {
+    "player_id": "PLAYER_20",
+    "given_name": "Max",
+    "family_name": "Sullivan",
+    "position_group": "Back",
+    "playing_position": "Wing",
+    "jersey_number": 5,
+    "device_id": "GPS_20"
+  },
+  {
+    "player_id": "PLAYER_21",
+    "given_name": "Jake",
+    "family_name": "Robinson",
+    "position_group": "Back",
+    "playing_position": "Five-eighth",
+    "jersey_number": 6,
+    "device_id": "GPS_21"
+  },
+  {
+    "player_id": "PLAYER_22",
+    "given_name": "Henry",
+    "family_name": "Clarke",
+    "position_group": "Back",
+    "playing_position": "Halfback",
+    "jersey_number": 7,
+    "device_id": "GPS_22"
+  },
+  {
+    "player_id": "PLAYER_23",
+    "given_name": "Oscar",
+    "family_name": "Patel",
+    "position_group": "Back",
+    "playing_position": "Wing",
+    "jersey_number": 20,
+    "device_id": "GPS_23"
+  },
+  {
+    "player_id": "PLAYER_24",
+    "given_name": "William",
+    "family_name": "Foster",
+    "position_group": "Back",
+    "playing_position": "Centre",
+    "jersey_number": 23,
+    "device_id": "GPS_24"
+  },
+  {
+    "player_id": "PLAYER_25",
+    "given_name": "Thomas",
+    "family_name": "Riley",
+    "position_group": "Back",
+    "playing_position": "Fullback",
+    "jersey_number": 25,
+    "device_id": "GPS_25"
+  },
+  {
+    "player_id": "PLAYER_26",
+    "given_name": "George",
+    "family_name": "Palmer",
+    "position_group": "Back",
+    "playing_position": "Five-eighth",
+    "jersey_number": 26,
+    "device_id": "GPS_26"
+  }
+]
