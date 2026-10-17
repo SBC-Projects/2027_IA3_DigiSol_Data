@@ -13,9 +13,9 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from hashing import ALL_DATA_FIELDS, hashes_for, recipe  # noqa: E402
 
-CLEAN_DIR = ROOT / "data"
-DIRTY_DIR = ROOT / "dirty_modified"
-TEACHER_DIR = ROOT / "teacher"
+CLEAN_DIR = ROOT / "data_modified_clean"
+DIRTY_DIR = ROOT / "data_modified_dirty"
+PLANTED_DIR = ROOT / "planted_problems"
 
 # 21 changed records plus 3 appended copies. Hashes are always taken from the
 # clean record before these edits.
@@ -328,7 +328,7 @@ def main() -> None:
     }
 
     DIRTY_DIR.mkdir(exist_ok=True)
-    TEACHER_DIR.mkdir(exist_ok=True)
+    PLANTED_DIR.mkdir(exist_ok=True)
 
     write_json(DIRTY_DIR / "players.json", players)
     write_json(DIRTY_DIR / "sessions.json", dirty)
@@ -358,7 +358,7 @@ def main() -> None:
         ["record_id", "field", "field_hash"],
     )
     write_csv(
-        TEACHER_DIR / "planted_problems.csv",
+        PLANTED_DIR / "planted_problems.csv",
         teacher_rows,
         [
             "problem_id",
@@ -373,13 +373,13 @@ def main() -> None:
             "intended_detection",
         ],
     )
-    write_json(TEACHER_DIR / "planted_problems.json", teacher_rows)
+    write_json(PLANTED_DIR / "planted_problems.json", teacher_rows)
 
     print(f"Dirty records: {len(dirty)}")
     print(f"Trusted hashes: {len(trusted)}")
     print(f"Problems: {len(teacher_rows)}")
     print(f"Wrote {DIRTY_DIR}")
-    print(f"Teacher key: {TEACHER_DIR / 'planted_problems.csv'}")
+    print(f"Planted problems: {PLANTED_DIR / 'planted_problems.csv'}")
 
 
 if __name__ == "__main__":

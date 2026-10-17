@@ -5,8 +5,8 @@ const path = require("path");
 
 const PORT = Number(process.env.PORT) || 3000;
 const rootDir = __dirname;
-const cleanDir = path.join(rootDir, "data");
-const dirtyDir = path.join(rootDir, "dirty_modified");
+const cleanDir = path.join(rootDir, "data_modified_clean");
+const dirtyDir = path.join(rootDir, "data_modified_dirty");
 
 function readJson(dir, name) {
   return JSON.parse(fs.readFileSync(path.join(dir, name), "utf8"));
@@ -254,7 +254,7 @@ function mountApi(app, base, dataset) {
   });
 }
 
-const cleanIntegrity = readJson(dirtyDir, "integrity.json");
+const cleanIntegrity = readJson(cleanDir, "integrity.json");
 const cleanMeta = readJson(cleanDir, "meta.json");
 cleanMeta.hash = {
   algorithm: cleanIntegrity.algorithm,

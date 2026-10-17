@@ -23,9 +23,8 @@ from datetime import date, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "pone.0288345.s001 copy.csv"
-DATA_DIR = ROOT / "data"
-CSV_DIR = ROOT / "clean_modified"
+SOURCE = ROOT / "data_original" / "pone.0288345.s001.csv"
+CLEAN_DIR = ROOT / "data_modified_clean"
 
 TEAM_NAME = "Capricorn College"
 
@@ -350,19 +349,17 @@ def main() -> None:
     sessions = [ordered_session(record) for record in build_sessions(rows, player_ids, players)]
     meta = build_meta(players, sessions)
 
-    DATA_DIR.mkdir(exist_ok=True)
-    CSV_DIR.mkdir(exist_ok=True)
-    write_csv(CSV_DIR / "players.csv", players)
-    write_csv(CSV_DIR / "sessions.csv", sessions)
-    write_json(DATA_DIR / "players.json", players)
-    write_json(DATA_DIR / "sessions.json", sessions)
-    write_json(DATA_DIR / "meta.json", meta)
+    CLEAN_DIR.mkdir(exist_ok=True)
+    write_csv(CLEAN_DIR / "players.csv", players)
+    write_csv(CLEAN_DIR / "sessions.csv", sessions)
+    write_json(CLEAN_DIR / "players.json", players)
+    write_json(CLEAN_DIR / "sessions.json", sessions)
+    write_json(CLEAN_DIR / "meta.json", meta)
 
     print(f"Players:  {meta['counts']['players']} ({meta['counts']['forwards']} forwards, {meta['counts']['backs']} backs)")
     print(f"Sessions: {meta['counts']['sessions']}")
     print(f"Records:  {meta['counts']['records']}")
-    print(f"CSV:      {CSV_DIR}")
-    print(f"API JSON: {DATA_DIR}")
+    print(f"Wrote {CLEAN_DIR}")
 
 
 if __name__ == "__main__":
