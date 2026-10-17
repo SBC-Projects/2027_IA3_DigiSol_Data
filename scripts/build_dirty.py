@@ -338,11 +338,6 @@ def main() -> None:
 
     write_csv(DIRTY_DIR / "players.csv", players, list(players[0].keys()))
     write_csv(DIRTY_DIR / "sessions.csv", dirty, ALL_DATA_FIELDS)
-    write_csv(
-        DIRTY_DIR / "integrity.csv",
-        trusted,
-        ["record_id", "identity_hash", "performance_hash", "all_data_hash"],
-    )
     field_rows = [
         {
             "record_id": row["record_id"],
@@ -352,11 +347,17 @@ def main() -> None:
         for row in trusted
         for field, digest in row["field_hashes"].items()
     ]
-    write_csv(
-        DIRTY_DIR / "integrity_fields.csv",
-        field_rows,
-        ["record_id", "field", "field_hash"],
-    )
+    for directory in (CLEAN_DIR, DIRTY_DIR):
+        write_csv(
+            directory / "integrity.csv",
+            trusted,
+            ["record_id", "identity_hash", "performance_hash", "all_data_hash"],
+        )
+        write_csv(
+            directory / "integrity_fields.csv",
+            field_rows,
+            ["record_id", "field", "field_hash"],
+        )
     write_csv(
         PLANTED_DIR / "planted_problems.csv",
         teacher_rows,

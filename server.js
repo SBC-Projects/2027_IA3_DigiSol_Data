@@ -119,7 +119,12 @@ function mountApi(app, base, dataset) {
             integrity: "/dirty/integrity.csv",
             integrityFields: "/dirty/integrity_fields.csv",
           }
-        : undefined,
+        : {
+            players: "/players.csv",
+            sessions: "/sessions.csv",
+            integrity: "/integrity.csv",
+            integrityFields: "/integrity_fields.csv",
+          },
     });
   });
 
@@ -288,6 +293,18 @@ mountApi(app, "/dirty", {
   integrity: readJson(dirtyDir, "integrity.json"),
 });
 
+app.get("/players.csv", (_req, res) => {
+  res.sendFile(path.join(cleanDir, "players.csv"));
+});
+app.get("/sessions.csv", (_req, res) => {
+  res.sendFile(path.join(cleanDir, "sessions.csv"));
+});
+app.get("/integrity.csv", (_req, res) => {
+  res.sendFile(path.join(cleanDir, "integrity.csv"));
+});
+app.get("/integrity_fields.csv", (_req, res) => {
+  res.sendFile(path.join(cleanDir, "integrity_fields.csv"));
+});
 app.get("/dirty/players.csv", (_req, res) => {
   res.sendFile(path.join(dirtyDir, "players.csv"));
 });
